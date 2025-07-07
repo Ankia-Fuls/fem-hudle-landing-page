@@ -78,6 +78,7 @@ header {
         border-radius: rem(90);
         border: none;
         color: var(--violet);
+        background-color: white;
         font-size: 1.5rem;
         box-shadow: 0 rem(8) rem(8) rem(1) var(--shadow);
     }
@@ -132,16 +133,79 @@ footer {
     }
 }
 
-@media only screen and (min-width: rem(751)) {
+@media only screen and (min-width: rem(1000)) {
     body {
         background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        padding: 3.82% 5.55% 0;
     }
 
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 54.37% auto;
         grid-template-rows: auto;
+        padding-top: 7.42%;
+        gap: rem(57);
     }
+
+    header {
+        img {
+            width: 16.1%;
+        }
+    }
+
+    .text {
+        text-align: left;
+
+        h1 {
+            font-size: 2.3rem;
+            width: 90%;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: rem(23);
+            height: rem(56);
+            width: 39%;
+            font-size: 1.2rem;
+        }
+    }
+
+    footer {
+        margin-top: 1.5%;
+
+        .socials {
+            font-size: 1.2rem;
+            gap: rem(18);
+            justify-content: right;
+
+            a {
+                border: rem(1) solid white;
+                width: rem(40);
+                height: rem(40);
+            }
+
+            i {
+                line-height: rem(40);
+            }
+        }
+
+        .attribution {
+            padding: 0;
+        }
+    }
+
+
 }
+
+// @media only screen and (min-width: rem(751)) and (max-width: rem(1070)) {
+//     html {
+//         font-size: rem(14);
+//     }
+// }
 
 @media only screen and (max-width: rem(500)) {
     html {
